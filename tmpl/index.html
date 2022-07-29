@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/style.css"/>
+        <title>Ascii</title>
+    </head>
+    <body class="dark">
+        <div class="light">
+            <h1>ASCII ART</h1>
+        </div>
+        <div class="dark">
+            <div class="center">
+                <form method="POST">
+                    <div class="middle">
+                        <input type="radio" name="banner" value="standard.txt" checked>
+                        <label class="text" for="standard">Standard</label>
+                    </div>
+      
+                    <div class="middle">
+                        <input type="radio" name="banner" value="shadow.txt">
+                        <label class="text" for="shadow">Shadow</label>
+                    </div>
+            
+                    <div class="middle">
+                        <input type="radio" name="banner" value="thinkertoy.txt">
+                        <label class="text" for="thinkertoy">Thinkertoy</label>
+                    </div>
+                    <div class="middle">
+                        <label class="text">Type here: </label><textarea name="asciiInput" type="text" rows="4" cols="50"></textarea><span></span><input type="submit" value="submit"/>
+                    </div>
+                </form>
+        </div>
+        <div class="light">
+                <div class="middle">
+                    <pre id="ascii">{{.}}</pre>
+                </div>
+        </div> 
+    </body>
+    <footer class="dark">
+        <p id="cp-text">By Nathan & Helena</p>
+    </footer>
+</html>
